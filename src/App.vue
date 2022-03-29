@@ -6,7 +6,10 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ToDoList from './components/ToDoList.vue'
+import ToDoListFooter from './components/ToDoListFooter.vue'
+import ToDoListHeader from './components/ToDoListHeader.vue'
+
 
 export default {
   name: 'App',
