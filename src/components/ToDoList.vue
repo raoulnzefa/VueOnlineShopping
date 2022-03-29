@@ -1,6 +1,6 @@
 <template>
   <ul class="todo-main">
-    <MyItem
+    <ToDoListItem
       v-for="todoObj in todos"
       :key="todoObj.id"
       :todo="todoObj"
@@ -11,9 +11,12 @@
 </template>
 
 <script>
-import ToDoListItem from "./components/ToDoListItem.vue";
+import ToDoListItem from "./ToDoListItem.vue";
 export default {
   name: "ToDoList",
+  components:{
+      ToDoListItem
+  }
 };
 </script>
 
